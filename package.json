@@ -1,0 +1,23 @@
+{
+  "name": "express-2-crud-app",
+  "version": "1.0.0",
+  "description": "here you have a products array.you should implement CRUD routes using express and it's folder structure.",
+  "main": "indsx.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samane-ghdrt/express-2-crud-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samane-ghdrt/express-2-crud-app/issues"
+  },
+  "homepage": "https://github.com/samane-ghdrt/express-2-crud-app#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

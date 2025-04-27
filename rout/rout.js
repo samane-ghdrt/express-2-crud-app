@@ -7,6 +7,7 @@ let products = [
     { id: 4, name: "MacBook Pro 16", price: 2399.99 },
     { id: 5, name: "DJI Mavic Air 2", price: 799.99 },
   ];
-rout.get('/',(res,req)=>{
-
+rout.get('/product',(res,req)=>{
+    res.status(200).json(products)
 })
+module.exports={products,rout}

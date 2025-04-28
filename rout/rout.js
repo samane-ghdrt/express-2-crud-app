@@ -1,6 +1,6 @@
-const express=require('express')
-const rout=express.Router()
-const{}=require('../');
+const express=require('express');
+const rout=express.Router();
+const{getAllBlogs,getSingle,createUser,updateUser,deletSingleUser}=require('../cotroler/cotroler');
 let products = [
     { id: 1, name: "iPhone 12 Pro", price: 1099.99 },
     { id: 2, name: "Samsung Galaxy S21", price: 999.99 },
@@ -8,5 +8,10 @@ let products = [
     { id: 4, name: "MacBook Pro 16", price: 2399.99 },
     { id: 5, name: "DJI Mavic Air 2", price: 799.99 },
   ];
-rout.get('/product',)
-module.exports={products,rout}
+rout.get('/product',getAllBlogs);
+rout.get('/product/:id',getSingle);
+rout.put('/product',createUser);
+rout.patch('/product/:id',updateUser);
+rout.delete('/product/:id',deletSingleUser);
+
+module.exports={rout}

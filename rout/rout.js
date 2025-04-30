@@ -8,10 +8,10 @@ let products = [
     { id: 4, name: "MacBook Pro 16", price: 2399.99 },
     { id: 5, name: "DJI Mavic Air 2", price: 799.99 },
   ];
-rout.get('/product',getAllBlogs);
-rout.get('/product/:id',getSingle);
-rout.put('/product',createUser);
-rout.patch('/product/:id',updateUser);
-rout.delete('/product/:id',deletSingleUser);
+rout.get('/',getAllBlogs);
+rout.get('/:id',getSingle);
+rout.put('/',createUser);
+rout.patch('/:id',updateUser);
+rout.delete('/:id',deletSingleUser);
 
 module.exports={rout}
